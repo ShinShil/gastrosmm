@@ -1,0 +1,237 @@
+<video autoplay muted loop>
+  <source src="/assets/video/Cut-n-Paste.mp4" type="video/mp4" />
+</video>
+<div class="menu">
+  <div class="photo-main">
+    <div class="content">
+      <div class="mini-name">
+        Лучшее в СНГ gastrosmm агенство
+      </div>
+      <div class="name">
+        Studio 64
+      </div>
+      <div class="benefits">
+        <div>Повышение узнаваемости бренда</div>
+        <div>Увеличение доходности бизнеса</div>
+        <div>Создание притока новых клиентов</div>
+      </div>
+      <!-- <div class="description">
+      Amazing work for you with love and innsperation
+    </div> -->
+      <div [ngx-scroll-to]="'form'" class="action action2">
+        Получить консультацию
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about">
+  <div class="title">
+    Развитие Бизнеса
+  </div>
+  <div class="desc">
+    В 21м веке существует переизбыток информациии покупателю очень сложно найти именно, то что ему нужно. Конкуренция очень большая
+    и поэтому помимо высокого качества продукта, требуется продвигать свой продукт, чтобы давать возможность потенциальным
+    клиентам узнать о Вас. Нередко бывает так, что о действительно хорошем и достойном продукте человек узнаёт совершенно
+    случайно и начинает им пользоваться. С точки зрения бизнеса, всё то время, которое он не знал о продукте - это упущенная
+    выгода. Давайте проиллюстрираем сказанное на примере.
+  </div>
+  <div class="task">
+    <div class="svg-wrapper">
+      <svg class="img" width="100%" height="400px" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <symbol id="user" viewBox="0 0 100 100" preserveAspectRatio="xMaxYMax meet">
+          <circle r="40" fill="yellow" cx="50" cy="50"></circle>
+          <circle r="8" cx="35" cy="35"></circle>
+          <circle r="8" cx="65" cy="35"></circle>
+          <path d="M35,70 Q50,75 65,70" fill="none" vector-effect="non-scaling-stroke" stroke="black" stroke-width="2px" stroke-linecap="round"></path>
+        </symbol>
+
+        <use class="user user1" width="20" height="20" href="#user" x="10" y="10"></use>
+        <use class="user user2" width="20" height="20" href="#user" x="29" y="10"></use>
+        <use class="user user3" width="20" height="20" href="#user" x="10" y="29"></use>
+        <use class="user user4" width="20" height="20" href="#user" x="29" y="29"></use>
+        <use class="user user5" width="20" height="20" href="#user" x="10" y="49"></use>
+        <use class="user user5" width="20" height="20" href="#user" x="29" y="49"></use>
+
+        <ellipse class="info-area" cx="63" cy="40" rx="10" ry="30" fill="white"></ellipse>
+        <text x="62" y="40" style="font-size: 40%">B</text>
+        <rect x="80" y="10" width="15" height="15" fill="white"></rect>
+        <text x="86" y="18" style="font-size: 40%">A</text>
+        <rect x="80" y="30" width="15" height="15" fill="white"></rect>
+        <text x="86" y="38" style="font-size: 40%">B</text>
+        <rect x="80" y="50" width="15" height="15" fill="white"></rect>
+        <text x="86" y="58" style="font-size: 40%">C</text>
+
+        <line x1="40" y1="80" x2="63" y2="70" stroke="black" stroke-dasharray="2"></line>
+        <text x="10" y="85" style="font-size: 40%; font-weight: bold">Доступная информация</text>
+      </svg>
+    </div>
+    <div class="text">
+      <div class="sentence">
+        1. Продукты ABC одинаково хороши
+      </div>
+      <div class="sentence">
+        2. Клиент видит и знает только о существовании В
+      </div>
+      <div class="sentence">
+        3. Какие шансы у продуктов А и С продать свои услуги или товар?
+      </div>
+      <div class="answer">
+        Нулевые, основная масса людей будут пользоваться продуктом В. Вся прибыль уйдёт к компании В. Остальные компании со временем
+        либо закроются, либо поглатятся компанией В.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="movement">
+  <div class="title">
+    Продвижение Бренда
+  </div>
+  <div class="subtitle">
+    приводит в следующим результатам
+  </div>
+  <div class="results">
+    <div class="result result1">
+      <div class="title">Популярность</div>
+      <div class="desc">Больше людей будут знать о Вас. Больше шансов, что в момент необходимости обратятся к Вам.</div>
+    </div>
+    <div class="result result2">
+      <div class="title">Прибыль</div>
+      <div class="desc">Чем больше спрос, тем больше прибыль. Раскрутка товара не только повышает число клинтов, но также
+        и спрос</div>
+    </div>
+    <div class="result result3">
+      <div class="title">Уверенность</div>
+      <div class="desc">Фирма, о которой знают гораздо меньше подвержена вероятности бесследно исчезнуть.</div>
+    </div>
+  </div>
+</div>
+<div class="photo-tree">
+  <div class="tree">
+    <div class="left">
+      <ng-container *ngFor="let photo of photos; let i = index">
+        <div *ngIf="i % 2 == 0" class="sub-wrapper">
+          <div class="sub-left"></div>
+          <div class="sub-content">
+            <h4 class="sub-header">{{ photo.name }}</h4>
+            <ul>
+              <li *ngFor="let detail of photo.details">
+                {{ detail }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <div class="right">
+      <ng-container *ngFor="let photo of photos; let i = index">
+        <div *ngIf="i % 2 == 1" class="sub-wrapper">
+          <div class="sub-right"></div>
+          <div class="sub-content">
+            <h4 class="sub-header">{{ photo.name }}</h4>
+            <ul>
+              <li *ngFor="let detail of photo.details">
+                {{ detail }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="tree-padding"></div>
+</div>
+<div class="company">
+  <div class="title">
+    STUDIO64 - 12 лет опыта
+  </div>
+  <div class="desc">
+    <div class="item">
+      <div class="title">Качество проверенное временем</div>
+      <div class="text">
+        STUDIO64 является первой крупной компанией на территории СНГ, которая специализируется на раскрутке бизнеса про еду. Особенностью
+        данной сферы деятельности является отсутствие готовых руководств. Каждая клиент - это целая история, к которой нужен
+        особый подход, т.к. количество способов которыми можно продвигать продукт практически неограниченно. На сегодняшний
+        день STUDIO64 представляет собой небольшую, проверенную временем, команду проффесионалов, каждый из которых способен
+        горы свернуть.
+      </div>
+    </div>
+    <div class="item">
+      <div class="title">Гарантия результата</div>
+      <div class="text">
+        STUDIO64 является первой крупной компанией на территории СНГ, которая специализируется на раскрутке бизнеса про еду. Особенностью
+        данной сферы деятельности является отсутствие готовых руководств. Каждая клиент - это целая история, к которой нужен
+        особый подход, т.к. количество способов которыми можно продвигать продукт практически неограниченно. На сегодняшний
+        день STUDIO64 представляет собой небольшую, проверенную временем, команду проффесионалов, каждый из которых способен
+        горы свернуть.
+      </div>
+    </div>
+    <div class="item">
+      <div class="title">Особый подход к каждому</div>
+      <div class="text">
+        STUDIO64 является первой крупной компанией на территории СНГ, которая специализируется на раскрутке бизнеса про еду. Особенностью
+        данной сферы деятельности является отсутствие готовых руководств. Каждая клиент - это целая история, к которой нужен
+        особый подход, т.к. количество способов которыми можно продвигать продукт практически неограниченно. На сегодняшний
+        день STUDIO64 представляет собой небольшую, проверенную временем, команду проффесионалов, каждый из которых способен
+        горы свернуть.
+      </div>
+    </div>
+  </div>
+</div>
+<div id="#photo-clients" class="photo-clients-class">
+  <h3>Наши клиенты</h3>
+  <div class="photo-clients-photo">
+    <div class="photo-client" *ngFor="let client of clientPhotos">
+      <img [src]="client.src" />
+    </div>
+  </div>
+</div>
+<div id="form" class="contact">
+  <div class="left">
+    <div class="title">Запишись на консультацию</div>
+  </div>
+  <div class="right">
+    <div class="title">Запишись на консультацию</div>
+    <div class="input">
+      <input [(ngModel)]="record.name">
+      <label [ngClass]="{'empty': !record.name}">Имя</label>
+      <span class="underline"></span>
+    </div>
+    <div class="input">
+      <input [(ngModel)]="record.phone">
+      <label [ngClass]="{'empty': !record.phone}">Телефон</label>
+      <span class="underline"></span>
+    </div>
+    <div class="input">
+      <textarea [(ngModel)]="record.message" name="message"></textarea>
+      <label [ngClass]="{'empty': !record.message}">Сообщение</label>
+      <span class="underline"></span>
+    </div>
+    <button mat-button mat-raised-button type="submit">Записаться</button>
+  </div>
+  <!-- <div class="helper">
+       Мы готовим на нашей кухне самый вкусный и аутентичный SMM для представителей ниши HoReCA. Мы повышаем узнаваемость бренда,
+      привлекаем целевую аудиторию и увеличиваем количество продаж. SMM - Ваш шаг в успешное будущее</div> -->
+</div>
+<div class="footer">
+  <div class="top">
+    <div class="contacts">
+      <div class="address">
+        г. Минск, ул. Мележа, дом 1, пом. 1426
+      </div>
+      <div class="phone">
+        +37529-166-10-55
+      </div>
+      <div class="mail">
+        marketing@studio64.by
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div>
+      Общество с ограниченной ответсвенностью "Студио 64"
+    </div>
+    <div>
+      УНП: 193030150
+    </div>
+  </div>
+</div>
