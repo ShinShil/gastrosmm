@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { PhotoMainComponent } from './photo/photo-main/photo-main.component';
+import { AppComponent } from './app.component';
 
 export const AppRoutes: Routes = [
-    { path: '', pathMatch: 'full', redirectTo: 'photo' },
-    { path: 'photo', component: PhotoMainComponent }
+    { path: '', pathMatch: 'full', redirectTo: 'studio64' },
+    { path: 'studio64', component: AppComponent }
 ];

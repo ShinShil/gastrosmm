@@ -1,0 +1,58 @@
+:host {
+    display: block;
+    max-height: 100vh;
+    overflow: hidden;
+    .layout {
+        background: rgba(0,0,0,0.7);
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left:  3em;
+        z-index: -1;
+    }
+    .top-row {
+        display: flex;
+        background: white;
+        padding: 1em 3em;
+        justify-content: space-between;
+        .logo, .contacts {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5em;
+        }
+    }
+
+    .content {
+        padding: 4em 3em;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        width: 50%;
+        .title {
+            font-size: 400%;
+            text-align:center;
+            color: white;
+            display: block;
+            padding: 0.5em;
+            .line {
+                width: 100%;
+                display: inline-block;
+            }
+            .line2 {
+                letter-spacing: 0.15em;
+            }
+            .line3 {
+                letter-spacing: 0.02em;
+            }
+            .line4 {
+                letter-spacing: 0.11em;
+            }
+        }
+        button {
+            font-size: 2.1em;
+            text-transform: unset;
+            padding:  0.25em 0.5em;
+        }
+    }
+}

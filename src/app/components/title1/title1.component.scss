@@ -1,0 +1,53 @@
+.menu {
+    color:white;
+    width: 100%;
+    min-height: 100vh;
+    .photo-main {
+        height: 100vh;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .content {
+            padding: 4em 6em;
+            border-radius: 3em;
+            background: rgba(0,0,0,0.5);
+            .name {
+                font-size: 500%;
+                text-transform: uppercase;
+                margin-top: -22px;
+            }
+            .mini-name {
+                font-size: 150%;
+                text-align: justify;
+            }
+            .benefits {
+                font-size: 125%;
+                padding: 1em 0 2em 0;
+                text-align: center;
+            }
+            .mini-name:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+            }
+            .action {
+                font-size: 200%;
+                text-transform: lowercase;
+                font-variant: all-small-caps;
+                text-align: center;
+                background: rgba(255,255,255,0.3);
+                line-height: 1em;
+                padding-top: 0.35em;
+                padding-bottom: 0.65em;
+                border: 1px solid white;
+            }
+            .action:hover {
+                cursor: pointer;
+                background: rgba(255,255,255,0.5);
+            }
+        }
+    }
+}

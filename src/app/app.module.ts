@@ -5,14 +5,16 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
-import { PhotoMainComponent } from './photo/photo-main/photo-main.component';
 import { FormsModule } from '@angular/forms';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { Title1Component } from './components/title1/title1.component';
+import { Title2Component } from './components/title2/title2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PhotoMainComponent,
+    Title1Component,
+    Title2Component
   ],
   imports: [
     BrowserModule,
