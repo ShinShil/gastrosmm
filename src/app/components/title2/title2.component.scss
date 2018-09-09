@@ -1,16 +1,6 @@
 :host {
     display: block;
-    max-height: 100vh;
     overflow: hidden;
-    .layout {
-        background: rgba(0,0,0,0.7);
-        width: 50%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left:  3em;
-        z-index: -1;
-    }
     .top-row {
         display: flex;
         background: white;
@@ -28,7 +18,7 @@
         text-transform: uppercase;
         text-align: center;
         font-weight: bold;
-        width: 50%;
+        background: rgba(0,0,0,0.7);
         .title {
             font-size: 400%;
             text-align:center;
@@ -40,7 +30,7 @@
                 display: inline-block;
             }
             .line2 {
-                letter-spacing: 0.15em;
+                letter-spacing: 0.22em;
             }
             .line3 {
                 letter-spacing: 0.02em;

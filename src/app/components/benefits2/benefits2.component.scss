@@ -1,0 +1,39 @@
+.movement {
+    background-color: rgba(222,184,135,0.7);
+    >.title {
+        text-align: center;
+        font-size: 250%;
+        font-weight: bold;
+        padding: 1em 0;
+        color: #967922;
+        padding-bottom: 0;
+    }
+    .subtitle {
+        color: #211b11;
+        font-size: 120%;
+        text-align: center;
+    }
+    .results {
+        padding: 2em;
+        display: flex;
+        font-size: 115%;
+        text-align: justify;
+        .result {
+            .title {
+                padding-bottom: 0.5em;
+            }
+            padding: 1em;
+            height: 10em;
+            border: 1px white solid;
+        }
+        .result1 {
+            background: rgba(255,255,255,0.7);
+        }
+        .result2 {
+            background: rgba(202, 190, 190, 0.7);
+        }
+        .result3 {
+            background: rgba(171, 145, 145, 0.7);
+        }
+    }
+}

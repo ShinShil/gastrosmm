@@ -1,0 +1,17 @@
+:host {
+    display: block;
+    text-align: center;
+    background: white;
+    h3 {
+        font-size: 190%;
+        margin: 0;
+        padding-top: 1em;
+    }
+    .image {
+        margin-top: 2em;
+        img {
+            width: 100%;
+            display: inherit;
+        }
+    }
+}

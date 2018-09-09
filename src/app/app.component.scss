@@ -16,84 +16,7 @@ video {
 }
 
 
-.about {
-    background-color: rgba(255,255,255,0.7);
-    padding: 2em;
-    font-family: sans-serif;
 
-    .title {
-        color: black;
-        padding-bottom: 0.5em;
-        font-size: 250%;
-        font-weight: bold;
-        text-align: center;
-    }
-    .desc {
-        font-size: 108%;
-        text-align: justify;
-    }
-
-    .task {
-        padding-top: 2em;
-        display: flex;
-        .svg-wrapper {
-            width: 50%;
-            height: 400px;
-            .img {
-                border-radius: 2em;
-                background:#bfb5b5;
-            }
-        }
-        .text {
-            font-size: 108%;
-            padding: 4em;
-            width: 50%;
-            .sentence {
-                padding-bottom: 1em;
-            }
-        }
-    }
-}
-
-.movement {
-    background-color: rgba(222,184,135,0.7);
-    >.title {
-        text-align: center;
-        font-size: 250%;
-        font-weight: bold;
-        padding: 1em 0;
-        color: #967922;
-        padding-bottom: 0;
-    }
-    .subtitle {
-        color: #211b11;
-        font-size: 120%;
-        text-align: center;
-    }
-    .results {
-        padding: 2em;
-        display: flex;
-        font-size: 115%;
-        text-align: justify;
-        .result {
-            .title {
-                padding-bottom: 0.5em;
-            }
-            padding: 1em;
-            height: 10em;
-            border: 1px white solid;
-        }
-        .result1 {
-            background: rgba(255,255,255,0.7);
-        }
-        .result2 {
-            background: rgba(202, 190, 190, 0.7);
-        }
-        .result3 {
-            background: rgba(171, 145, 145, 0.7);
-        }
-    }
-}
 
 .photo-tree {
     background: rgba(222, 184, 135, 0.7);
@@ -105,10 +28,17 @@ video {
             .sub-wrapper {
                 padding-top: 2em;
                 .sub-content {
+                    h4 {
+                        margin: 0;
+                        padding-bottom: 0.5em;
+                        text-transform: uppercase;
+                        border-bottom: 1px white solid;
+                    }
                     padding: 1em;
                     background: rgba(0,0,0,0.8);
                     width: 50%;
                     margin: 0 auto;
+                    border-radius: 1em;
                 }
             }
         }
@@ -183,6 +113,8 @@ video {
     h3 {
         padding: 0;
         margin: 0;
+        padding-top: 1em;
+        font-size: 200%;
         padding-bottom: 1em;
         text-align: center;
         color: black;

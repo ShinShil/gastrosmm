@@ -1,0 +1,42 @@
+:host {
+    display: block;
+    padding: 3em;
+    background-color: white;
+}
+
+.about {
+    font-family: sans-serif;
+
+    .title {
+        color: black;
+        text-transform: uppercase;
+        padding-bottom: 0.5em;
+        font-size: 250%;
+        font-weight: bold;
+    }
+    .desc {
+        font-size: 108%;
+        text-align: justify;
+    }
+
+    .task {
+        padding-top: 2em;
+        display: flex;
+        .svg-wrapper {
+            width: 50%;
+            height: 400px;
+            .img {
+                border-radius: 2em;
+                background:#bfb5b5;
+            }
+        }
+        .text {
+            font-size: 108%;
+            padding: 4em;
+            width: 50%;
+            .sentence {
+                padding-bottom: 1em;
+            }
+        }
+    }
+}
