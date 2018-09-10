@@ -111,6 +111,15 @@
        Мы готовим на нашей кухне самый вкусный и аутентичный SMM для представителей ниши HoReCA. Мы повышаем узнаваемость бренда,
       привлекаем целевую аудиторию и увеличиваем количество продаж. SMM - Ваш шаг в успешное будущее</div> -->
 </div>
+<div class="map">
+  <ya-map [zoom]="13" [latitude]="latitude" [longitude]="longitude">
+    <ya-marker #marker [latitude]="latitude" [longitude]="longitude"
+    [balloonContentHeader]="'STUDIO64'"
+    [balloonContentBody]="'ул. Мележа 1'"
+    [draggable]="false">
+    </ya-marker>
+  </ya-map>
+</div>
 <div class="footer">
   <div class="top">
     <div class="contacts">

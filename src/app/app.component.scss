@@ -218,6 +218,15 @@ video {
     }
 }
 
+.map {
+    width: 100%;
+    height: 20em;
+    ::ng-deep .map-container-inner {
+        width: 100%;
+        height: 20em;
+    }
+}
+
 .footer {
   background-color: rgba(0,0,0,0.5);
   color: white;

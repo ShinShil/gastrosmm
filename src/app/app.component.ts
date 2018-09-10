@@ -1,16 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   record = {
     name: '',
     phone: '',
     message: ''
   };
+
+  latitude = '53.938898';
+  longitude = '27.601016';
+
+  @ViewChild('marker') marker;
   
   photos = [
     {
@@ -93,4 +98,8 @@ export class AppComponent {
       src: '/assets/img/clients_moroz.jpg'
     }
   ]
+
+  ngOnInit(): void {
+    console.log(this.marker);
+  }
 }
