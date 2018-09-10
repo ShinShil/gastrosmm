@@ -248,6 +248,12 @@ video {
     }
 }
 
+@media only screen and (max-width: 374px) {
+    body {
+        font-size:  75%;
+    }
+}
+
 @media only screen and (max-width: 486px) {
     .menu {
         .photo-main {
@@ -285,6 +291,9 @@ video {
             .left, .right {
                 .sub-wrapper {
                     .sub-content {
+                        h4 {
+                            font-size: 66%;
+                        }
                         ul {
                             display: none;
                         }

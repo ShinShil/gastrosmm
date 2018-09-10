@@ -64,3 +64,22 @@
         }
     }
 }
+
+@media only screen and (max-width: 563px) {
+    :host {
+        .top-row {
+            flex-wrap: wrap;
+            .logo {
+                padding-bottom: 0.5em;
+            }
+        }
+        .content {
+            .title {
+                font-size: 200%;
+            }
+            .action {
+                font-size: 1em;
+            }
+        }
+    }
+}
